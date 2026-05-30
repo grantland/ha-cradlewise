@@ -73,25 +73,6 @@ SENSOR_DESCRIPTIONS: tuple[CradlewiseSensorEntityDescription, ...] = (
         value_fn=lambda c: c.sleep_stage_name,
     ),
     CradlewiseSensorEntityDescription(
-        key="baby_status",
-        translation_key="baby_status",
-        value_fn=lambda c: (
-            "play"
-            if not c.baby_present
-            else (
-                "sleep"
-                if "sleep" in c.baby_sleep_state.lower()
-                or c.sleep_phase_name.lower() in ("sleep", "stirring")
-                else "awake"
-            )
-        ),
-        icon_fn=lambda state: {
-            "sleep": "mdi:sleep",
-            "awake": "mdi:lightning-bolt-outline",
-            "play": "mdi:teddy-bear",
-        }.get(state, "mdi:baby-face"),
-    ),
-    CradlewiseSensorEntityDescription(
         key="sleep_phase",
         translation_key="sleep_phase",
         icon="mdi:moon-waning-crescent",

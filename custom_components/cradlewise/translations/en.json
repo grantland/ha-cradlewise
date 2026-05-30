@@ -21,7 +21,6 @@
   "entity": {
     "sensor": {
       "sleep_stage": { "name": "Sleep stage" },
-      "baby_status": { "name": "Baby status" },
       "sleep_phase": { "name": "Sleep phase" },
       "bounce_amplitude": { "name": "Bounce amplitude" },
       "music_volume": { "name": "Music volume" },
