@@ -53,9 +53,18 @@ This integration queries the Cradlewise cloud REST API Gateway to fetch cradle s
 
 ## Installation
 
-[![Add to HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=jlamendo&repository=ha-cradlewise&category=integration)
+### Via HACS (Recommended)
 
-Or manually: copy `custom_components/cradlewise` to your HA `config/custom_components/` directory.
+1. Open **HACS** in your Home Assistant instance.
+2. Click the three dots in the top-right corner and select **Custom repositories**.
+3. Add the following repository URL:
+   `https://github.com/grantland/ha-cradlewise`
+4. Set the category to **Integration** and click **Add**.
+5. Find the **Cradlewise Smart Crib** integration in HACS and click **Download**.
+
+### Manually
+
+Copy the `custom_components/cradlewise` directory to your Home Assistant `config/custom_components/` directory.
 
 ## Setup
 
