@@ -24,12 +24,9 @@
       "baby_status": { "name": "Baby status" },
       "sleep_phase": { "name": "Sleep phase" },
       "bounce_amplitude": { "name": "Bounce amplitude" },
-      "music_mood": { "name": "Music mood" },
       "music_volume": { "name": "Music volume" },
       "music_track": { "name": "Music track" },
       "temperature": { "name": "Temperature" },
-      "sleep_time": { "name": "Sleep time" },
-      "wake_up_time": { "name": "Wake-up time" },
       "day_start_time": { "name": "Configured day start" },
       "rise_time": { "name": "Today's rise time" },
       "bed_time": { "name": "Today's bedtime" },
@@ -58,18 +55,13 @@
     "binary_sensor": {
       "online": { "name": "Online" },
       "baby_present": { "name": "Baby present" },
-      "baby_needs_attention": { "name": "Baby needs attention" },
-      "baby_needs_help": { "name": "Baby needs help" },
       "crib_helping": { "name": "Crib soothing" },
       "bouncing": { "name": "Bouncing" },
       "music_playing": { "name": "Music playing" },
       "light_on": { "name": "Night light" },
-      "loud_sound_detected": { "name": "Loud sound detected" },
       "inside_sleep_schedule": { "name": "In sleep schedule" },
       "inside_soothing_window": { "name": "In soothing window" },
-      "rocking_not_effective": { "name": "Rocking not effective" },
-      "charging": { "name": "Charging" },
-      "power_supply_removed": { "name": "Power connected" }
+      "rocking_not_effective": { "name": "Rocking not effective" }
     }
   }
 }

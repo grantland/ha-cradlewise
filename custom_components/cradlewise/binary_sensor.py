@@ -33,6 +33,7 @@ BINARY_SENSOR_DESCRIPTIONS: tuple[CradlewiseBinarySensorEntityDescription, ...] 
         key="online",
         translation_key="online",
         device_class=BinarySensorDeviceClass.CONNECTIVITY,
+        entity_category=EntityCategory.DIAGNOSTIC,
         value_fn=lambda c: c.online,
     ),
     CradlewiseBinarySensorEntityDescription(
@@ -41,20 +42,6 @@ BINARY_SENSOR_DESCRIPTIONS: tuple[CradlewiseBinarySensorEntityDescription, ...] 
         device_class=BinarySensorDeviceClass.OCCUPANCY,
         icon="mdi:baby-face-outline",
         value_fn=lambda c: c.baby_present,
-    ),
-    CradlewiseBinarySensorEntityDescription(
-        key="baby_needs_attention",
-        translation_key="baby_needs_attention",
-        device_class=BinarySensorDeviceClass.PROBLEM,
-        icon="mdi:alert-circle-outline",
-        value_fn=lambda c: c.baby_needs_attention,
-    ),
-    CradlewiseBinarySensorEntityDescription(
-        key="baby_needs_help",
-        translation_key="baby_needs_help",
-        device_class=BinarySensorDeviceClass.PROBLEM,
-        icon="mdi:alert",
-        value_fn=lambda c: c.baby_needs_help,
     ),
     CradlewiseBinarySensorEntityDescription(
         key="crib_helping",
@@ -79,13 +66,6 @@ BINARY_SENSOR_DESCRIPTIONS: tuple[CradlewiseBinarySensorEntityDescription, ...] 
         translation_key="light_on",
         icon="mdi:lightbulb",
         value_fn=lambda c: c.light_on,
-    ),
-    CradlewiseBinarySensorEntityDescription(
-        key="loud_sound_detected",
-        translation_key="loud_sound_detected",
-        device_class=BinarySensorDeviceClass.SOUND,
-        icon="mdi:volume-high",
-        value_fn=lambda c: c.loud_sound_detected,
     ),
     CradlewiseBinarySensorEntityDescription(
         key="inside_sleep_schedule",

@@ -104,12 +104,6 @@ SENSOR_DESCRIPTIONS: tuple[CradlewiseSensorEntityDescription, ...] = (
         value_fn=lambda c: c.bounce_amplitude,
     ),
     CradlewiseSensorEntityDescription(
-        key="music_mood",
-        translation_key="music_mood",
-        icon="mdi:music-note",
-        value_fn=lambda c: c.music_mood,
-    ),
-    CradlewiseSensorEntityDescription(
         key="music_volume",
         translation_key="music_volume",
         icon="mdi:volume-medium",
@@ -129,20 +123,6 @@ SENSOR_DESCRIPTIONS: tuple[CradlewiseSensorEntityDescription, ...] = (
         native_unit_of_measurement="°C",
         state_class=SensorStateClass.MEASUREMENT,
         value_fn=lambda c: c.temperature,
-    ),
-    CradlewiseSensorEntityDescription(
-        key="sleep_time",
-        translation_key="sleep_time",
-        icon="mdi:clock-start",
-        device_class="timestamp",
-        value_fn=lambda c: _parse_datetime(c.sleep_time),
-    ),
-    CradlewiseSensorEntityDescription(
-        key="wake_up_time",
-        translation_key="wake_up_time",
-        icon="mdi:clock-end",
-        device_class="timestamp",
-        value_fn=lambda c: _parse_datetime(c.wake_up_time),
     ),
     CradlewiseSensorEntityDescription(
         key="day_start_time",
