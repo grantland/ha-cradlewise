@@ -23,8 +23,8 @@
       "sleep_stage": { "name": "Sleep stage" },
       "sleep_phase": { "name": "Sleep phase" },
       "bounce_amplitude": { "name": "Bounce amplitude" },
-      "music_volume": { "name": "Music volume" },
-      "music_track": { "name": "Music track" },
+      "music_volume": { "name": "Sound volume" },
+      "music_track": { "name": "Sound track" },
       "temperature": { "name": "Temperature" },
       "day_start_time": { "name": "Configured day start" },
       "rise_time": { "name": "Today's rise time" },
@@ -55,8 +55,9 @@
       "online": { "name": "Online" },
       "baby_present": { "name": "Baby present" },
       "crib_helping": { "name": "Crib soothing" },
+      "active_soothing": { "name": "Active soothing" },
       "bouncing": { "name": "Bouncing" },
-      "music_playing": { "name": "Music playing" },
+      "music_playing": { "name": "Sound playing" },
       "light_on": { "name": "Night light" }
     }
   }

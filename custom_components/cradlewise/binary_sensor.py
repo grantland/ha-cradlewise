@@ -52,6 +52,12 @@ BINARY_SENSOR_DESCRIPTIONS: tuple[CradlewiseBinarySensorEntityDescription, ...] 
         value_fn=lambda c: c.is_crib_helping,
     ),
     CradlewiseBinarySensorEntityDescription(
+        key="active_soothing",
+        translation_key="active_soothing",
+        icon="mdi:hand-heart",
+        value_fn=lambda c: c.active_soothing,
+    ),
+    CradlewiseBinarySensorEntityDescription(
         key="bouncing",
         translation_key="bouncing",
         icon="mdi:arrow-up-down-bold",

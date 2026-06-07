@@ -8,7 +8,7 @@
   "iot_class": "cloud_push",
   "issue_tracker": "https://github.com/custom-components/cradlewise/issues",
   "requirements": [
-    "pycradlewise @ git+https://github.com/grantland/pycradlewise.git@916af98"
+    "pycradlewise @ git+https://github.com/grantland/pycradlewise.git@68ff306"
   ],
   "version": "0.3.1"
 }

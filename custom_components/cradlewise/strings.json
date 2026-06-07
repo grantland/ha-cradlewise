@@ -55,6 +55,7 @@
       "online": { "name": "Online" },
       "baby_present": { "name": "Baby present" },
       "crib_helping": { "name": "Crib soothing" },
+      "active_soothing": { "name": "Active soothing" },
       "bouncing": { "name": "Bouncing" },
       "music_playing": { "name": "Sound playing" },
       "light_on": { "name": "Night light" }
